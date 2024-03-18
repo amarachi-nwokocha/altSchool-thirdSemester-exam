@@ -1,0 +1,14 @@
+
+
+.head{
+    background-image: url("../../assets/signIn.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white !important;
+   
+}
+.main{
+    background: black;
+    opacity: 0.70;
+    width: 500px;
+  }

@@ -1,0 +1,12 @@
+.hero{
+    background-image: url('/src/assets/un1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    color: white !important;
+   
+}
+.main{
+    background: black;
+    opacity: 0.70;
+  }
