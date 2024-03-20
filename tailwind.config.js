@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'dmsans': ['"DM Sans"', 'sans-serif'],
+      },
       colors:{
         purple: '#543EE0',
         red: '#FF1400',

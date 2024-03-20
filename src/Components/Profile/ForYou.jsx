@@ -11,7 +11,7 @@ import { MdOutlineAnalytics } from "react-icons/md";
 
 const ForYou = () => {
   const user = JSON.parse(localStorage.getItem("user"));
-  // console.log(user.displayName);
+  console.log(user);
   //create async function
   const [posts, setPosts] = useState([])
  const navigate = useNavigate()

@@ -9,7 +9,7 @@ import Sec3 from "./Sec3"
 
 const DashBoard = () => {
   return (
-    <div>
+    <div className=" font-dmsans">
         <Navbar />
         <Hero />
         <About />
