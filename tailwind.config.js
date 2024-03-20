@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+      fontFamily: {
+        'dmsans': ['"DM Sans"', 'sans-serif'],
+      },
     extend: {
       colors:{
         purple: '#543EE0',
