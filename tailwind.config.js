@@ -5,6 +5,9 @@ export default {
     "./Components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+      fontFamily: {
+        'dmsans': ['"DM Sans"', 'sans-serif'],
+      },
     extend: {
       fontFamily: {
         'dmsans': ['"DM Sans"', 'sans-serif'],
