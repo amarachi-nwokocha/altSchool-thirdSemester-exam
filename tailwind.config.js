@@ -2,12 +2,9 @@
 export default {
   content: [
     "./index.html",
-    "./Components/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-      fontFamily: {
-        'dmsans': ['"DM Sans"', 'sans-serif'],
-      },
     extend: {
       fontFamily: {
         'dmsans': ['"DM Sans"', 'sans-serif'],
