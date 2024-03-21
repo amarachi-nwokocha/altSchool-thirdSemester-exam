@@ -72,19 +72,19 @@ const Create = () => {
         <div className="">
         <div className="flex justify-between border-2 h-fit p-5 w-[579px] m-5 rounded-md ">
           <p
-            className="font-bold hover:border-b-2 hover:border-b-purple "
+            className="font-bold border-b-2 hover:border-b-purple "
             onClick={handleForYou}
           >
             For you{" "}
           </p>
           <p
-            className="font-bold hover:border-b-2 hover:border-b-purple "
+            className="font-bold border-b-2 hover:border-b-purple "
             onClick={handleFeatured}
           >
             Featured
           </p>
           <p
-            className="font-bold hover:border-b-2 hover:border-b-purple "
+            className="font-bold border-b-2 hover:border-b-purple "
             onClick={handleRecent}
           >
             Recent

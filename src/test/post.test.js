@@ -1,15 +1,33 @@
-
-// import { render, fireEvent } from '@jest/react';
-// import '@jest/jest-dom/extend-expect';
-// import Post from './Post';
-
-// describe('Post component', () => { 
-
-  
-//  })
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Post from "../Components/Profile/Post";
+import SignIn from "../Components/Auth/SignIn";
+describe("post show", () => {
+  test("post component", () => {
+    render(
+      <Router>
+        <Post />
+      </Router>
+    );
+    const linkElement = screen.getByText(/Publish/i);
+    expect(linkElement).toBeInTheDocument();
+  });
+  test("signup show", () => {
+    render(
+      <Router>
+        <SignIn />
+      </Router>
+    );
+    const linkElement = screen.getByText(/First Name/i);
+    expect(linkElement).toBeInTheDocument();
+  });
+ 
+});
 
 // describe('Post component', () => {
 //   test('renders correctly', () => {
+
 //     const { getByText, getByPlaceholderText } = render(<Post />);
 //     expect(getByText('Publish')).toBeInTheDocument();
 //     expect(getByPlaceholderText('Title')).toBeInTheDocument();

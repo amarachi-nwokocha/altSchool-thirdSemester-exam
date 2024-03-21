@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+
 import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 const SignIn = () => {
   const navigate = useNavigate();

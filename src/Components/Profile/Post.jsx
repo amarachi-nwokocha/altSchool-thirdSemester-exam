@@ -1,11 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "../../firebase";
 import { MdOutlineImage, MdOutlineVideocam } from "react-icons/md";
 import { useRef } from "react";
 const Post = () => {
-  
   const [postDetails, setPostDetails] = useState({
     title: "",
     body: "",
@@ -21,7 +20,7 @@ const Post = () => {
   });
   const {
     title,
-  //  userName,
+    //  userName,
     body,
     // programming,
     // machineLearning,
@@ -75,23 +74,22 @@ const Post = () => {
     }
   };
 
-
   const addPost = async (e) => {
     e.preventDefault();
     try {
       const user = JSON.parse(localStorage.getItem("user"));
       console.log(user);
-      postDetails.userName  = user.displayName;
+      postDetails.userName = user.displayName;
       const postDetailsCopy = {
         ...postDetails,
         timeStamp: serverTimestamp(),
         userRef: user?.uid,
       };
-    
-      await addDoc(collection(db, "posts"), postDetailsCopy,user);
+
+      await addDoc(collection(db, "posts"), postDetailsCopy, user);
       // hideModal()
-      postDetails.body= ''
-      postDetails.title=''
+      postDetails.body = "";
+      postDetails.title = "";
       toast.success("post added");
     } catch (error) {
       toast.error(error.message);
@@ -107,13 +105,12 @@ const Post = () => {
       <button
         className="bg-purple text-white text-sm p-3 rounded-md"
         onClick={addPost}
-         
       >
         Publish
       </button>
 
       <div className="w-[900px] my-5">
-      {postDetails.imageUrl ? (
+        {postDetails.imageUrl ? (
           <img
             src={postDetails.imageUrl}
             alt=""
@@ -170,7 +167,7 @@ const Post = () => {
             </div>
           ) : null}
         </div>
-       
+
         <div>
           <input
             type="text"
@@ -191,7 +188,6 @@ const Post = () => {
             className="outline-none p-3 text-md"
           ></textarea>
           <div>
-        
             {/* <button
               type="button"
               id="politics"

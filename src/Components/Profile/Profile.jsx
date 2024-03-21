@@ -55,7 +55,7 @@ const Profile = () => {
                   <FaRegBell />
                   Notifications</p>
               </div>
-              <p className="mb-2 text-sm text-red">Log out</p>
+              <Link to={'/'} className="text-red">Log out</Link>
             </div>
           </div>
       <div>
