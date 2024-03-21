@@ -13,7 +13,7 @@ const Hero = () => {
             Writers
           </p>
           <button className=" border-2 px-8 py-2 rounded-md bg-purple text-white">
-            Get Staarted
+            Get Started
           </button>
         </div>
       </div>

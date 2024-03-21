@@ -19,16 +19,16 @@ const Navbar = () => {
         <div className="md:static absolute md:min-h-fit hidden  min-h-[60vh] left-0 top-[9%] md:w-auto w-full md:flex items-center px-5 ">
           <ul className=" flex md:flex-row flex-col  md:items-center md:gap-[4vw] gap-8">
             <li>
-              <a className="hover:text-[#FF9A2B]" href="">Home</a>
+              <a className="hover:text-purple" href="">Home</a>
             </li>
             <li>
-              <a className="hover:text-[#FF9A2B]" href="">About Us</a>
+              <a className="hover:text-purple" href="">About Us</a>
             </li>
             <li>
-              <a className="hover:text-[#FF9A2B]" href="">Contact</a>
+              <a className="hover:text-purple" href="">Contact</a>
             </li>
             <li>
-              <a className="hover:text-[#FF9A2B]" href="">Blog</a>
+              <a className="hover:text-purple" href="">Blog</a>
             </li>
           </ul>
         </div>
@@ -51,20 +51,20 @@ const Navbar = () => {
         {/* mobile nav starts */}
         <div className=
         {nav ?
-          "flex flex-col absolute md:hidden top-20 left-0 h-max w-full text-center text-black rounded-md bg-purple"  : "hidden"}
+          "flex flex-col  z-40  absolute top-24 text-2xl pt-10  md:hidden  left-0 h-[400px] w-full text-center  rounded-md bg-purple"  : "hidden"}
         >
           <ul  className= "flex md:flex-row flex-col pt-4 text-white  md:items-center md:gap-[4vw] gap-8">
             <li>
-              <a className="hover:text-[#FF9A2B]" href="">Home</a>
+              <a className="hover:text-purple" href="">Home</a>
             </li>
             <li>
-              <a className="hover:text-[#FF9A2B]" href="">About Us</a>
+              <a className="hover:text-purple" href="">About Us</a>
             </li>
             <li>
-              <a className="hover:text-[#FF9A2B]" href="">Contact Us</a>
+              <a className="hover:text-purple" href="">Contact Us</a>
             </li>
             <li>
-              <a className="hover:text-[#FF9A2B]" href="">Blog</a>
+              <a className="hover:text-purple" href="">Blog</a>
             </li>
           </ul>
         </div>
